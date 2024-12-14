@@ -1,0 +1,151 @@
+body {
+    background-image: url('https://as2.ftcdn.net/v2/jpg/04/09/29/39/1000_F_409293940_BkVR0JF6E5Nc2OB3sCAvGEqLHbcgyh9z.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(113, 243, 108, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover {
+    
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.dashboard {
+    padding: 20px;
+    background: rgb(247, 245, 145);
+    margin: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s;
+  
+}
+
+.stats, .passes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-item, .pass-item {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1.5s;
+}
+
+.stat-item .title, .pass-item .title {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#total-revenue .title {
+    background-color: #2196F3;
+}
+
+#total-penalty .title {
+    background-color: #f44336;
+}
+
+#daily-pass .title {
+    background-color: #FF9800;
+}
+
+#monthly-pass .title {
+    background-color: #9C27B0;
+}
+
+#yearly-pass .title {
+    background-color: #3F51B5;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.05); opacity: 1; }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .stats, .passes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item, .pass-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
