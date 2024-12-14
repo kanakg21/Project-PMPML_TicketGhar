@@ -1,0 +1,66 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background {
+    background-image: url('https://www.sustainable-bus.com/wp-content/uploads/2022/03/OLECTRA_Electric_Bus.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content {
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    animation: slideIn 1s ease-in-out;
+    
+}
+
+.upper-part {
+    background-color: #80db6e; /* Yellow color */
+    padding: 20px;
+    text-align: center;
+}
+
+.lower-part {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: justify;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .content {
+        width: 95%;
+    }
+}

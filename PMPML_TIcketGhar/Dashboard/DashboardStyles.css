@@ -1,0 +1,74 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+    nav .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+.dashboard {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats, .passes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-item, .pass-item {
+    background-color: #e7e7e7;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .stat-item .title, .pass-item .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+.stat-item {
+    background-color: #ffcccb;
+}
+
+.pass-item {
+    background-color: #add8e6;
+}
+
+.graph-section {
+    margin-top: 1px;
+    text-align: center;
+}
